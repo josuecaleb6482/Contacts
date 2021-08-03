@@ -41,6 +41,171 @@
         }
       },
       {
+        "HashCode": -9017937,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.Counter",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": 1741025322,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.Counter",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazor.Contacts.Wasm.Client.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1389274497,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.FetchData",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -1970701729,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.FetchData",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazor.Contacts.Wasm.Client.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1356192616,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.Index",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 1820606934,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.Index",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazor.Contacts.Wasm.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -372005338,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.ListContact",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.ListContact"
+        }
+      },
+      {
+        "HashCode": -162024274,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.ListContact",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazor.Contacts.Wasm.Client.Pages.ListContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.ListContact",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -376126193,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ContactDetails"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails"
+        }
+      },
+      {
+        "HashCode": 554525170,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails",
+        "AssemblyName": "Blazor.Contacts.Wasm.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 794602562,
         "Kind": "Components.Component",
         "Name": "Blazor.Contacts.Wasm.Client.Shared.SurveyPrompt",
@@ -219,138 +384,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Blazor.Contacts.Wasm.Client.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1356192616,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Contacts.Wasm.Client.Pages.Index",
-        "AssemblyName": "Blazor.Contacts.Wasm.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 1820606934,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Contacts.Wasm.Client.Pages.Index",
-        "AssemblyName": "Blazor.Contacts.Wasm.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazor.Contacts.Wasm.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1389274497,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Contacts.Wasm.Client.Pages.FetchData",
-        "AssemblyName": "Blazor.Contacts.Wasm.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -1970701729,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Contacts.Wasm.Client.Pages.FetchData",
-        "AssemblyName": "Blazor.Contacts.Wasm.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazor.Contacts.Wasm.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -9017937,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Contacts.Wasm.Client.Pages.Counter",
-        "AssemblyName": "Blazor.Contacts.Wasm.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": 1741025322,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Contacts.Wasm.Client.Pages.Counter",
-        "AssemblyName": "Blazor.Contacts.Wasm.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazor.Contacts.Wasm.Client.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -376126193,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails",
-        "AssemblyName": "Blazor.Contacts.Wasm.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ContactDetails"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails"
-        }
-      },
-      {
-        "HashCode": 554525170,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails",
-        "AssemblyName": "Blazor.Contacts.Wasm.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Contacts.Wasm.Client.Pages.ContactDetails",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13064,6 +13097,11 @@
     {
       "FilePath": "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Shared/MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Pages/ListContact.razor",
+      "TargetPath": "Pages\\ListContact.razor",
       "FileKind": "component"
     },
     {

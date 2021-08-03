@@ -636,3 +636,5 @@
 /home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/obj/Debug/net5.0/Blazor.Contacts.Wasm.Client.pdb
 /home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/obj/Debug/net5.0/RazorDeclaration/Pages/ContactDetails.razor.g.cs
 /home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/obj/Debug/net5.0/Razor/Pages/ContactDetails.razor.g.cs
+/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/obj/Debug/net5.0/RazorDeclaration/Pages/ListContact.razor.g.cs
+/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/obj/Debug/net5.0/Razor/Pages/ListContact.razor.g.cs

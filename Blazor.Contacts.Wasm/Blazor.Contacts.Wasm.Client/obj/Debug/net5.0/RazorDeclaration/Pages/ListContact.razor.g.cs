@@ -8,7 +8,6 @@ namespace Blazor.Contacts.Wasm.Client.Pages
 {
     #line hidden
     using System;
-    using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
@@ -83,15 +82,14 @@ using Blazor.Contacts.Wasm.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Pages/ContactDetails.razor"
-using Blazor.Contacts.Wasm.Shared;
+#line 3 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Pages/ListContact.razor"
+using System.Collections.Generic;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/contactdetails")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/contactdetails/{id}")]
-    public partial class ContactDetails : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/contactlist")]
+    public partial class ListContact : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -99,20 +97,20 @@ using Blazor.Contacts.Wasm.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 46 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Pages/ContactDetails.razor"
+#line 42 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Pages/ListContact.razor"
       
-    public Contact contact;
+    public IEnumerable<Contact> contacts;
 
-        protected async override Task OnInitializedAsync()
-        {
-            contact = new Contact();
-        }
+    protected async override Task OnInitializedAsync()
+    {
+        contacts = await ContactService.GetAll();
+    }
+    
+    public void Edit()
+    {
+        NavigationManager.NavigateTo("./contactdetails");
+    }
 
-        protected async Task Save()
-        {
-            await ContactService.SaveContact(contact);
-            NavigationManager.NavigateTo("./contactlist");
-        }
 
 #line default
 #line hidden

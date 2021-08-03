@@ -1,7 +1,10 @@
 @page "/contactdetails"
+@page "/contactdetails/{id}"
 
 @using Blazor.Contacts.Wasm.Shared
+
 @inject IContactService ContactService
+@inject NavigationManager NavigationManager
 
 @if(contact == null)
 {
@@ -51,5 +54,6 @@ else{
         protected async Task Save()
         {
             await ContactService.SaveContact(contact);
+            NavigationManager.NavigateTo("./contactlist");
         }
 }
