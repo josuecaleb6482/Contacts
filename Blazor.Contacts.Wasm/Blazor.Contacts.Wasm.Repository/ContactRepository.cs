@@ -57,8 +57,8 @@ namespace Blazor.Contacts.Wasm.Repository
         {
             try
             {
-                var sql = @" INSERT INTO Contacts (FirstName, LastName, Phone, Address)
-                            VALUES(@FirstName, @LastName, @Phone, @Address";
+                var sql = @"INSERT INTO Contacts (FirstName, LastName, Phone, Address)
+                            VALUES(@FirstName, @LastName, @Phone, @Address)";
                 var result = await _dbConnection.ExecuteAsync(sql, new {
                     contact.FirstName,
                     contact.LastName,
@@ -78,7 +78,7 @@ namespace Blazor.Contacts.Wasm.Repository
         {
             try
             {
-                var sql = @" UPDATE Contacts 
+                var sql = @"UPDATE Contacts 
                                 SET(FirstName=@FirstName, 
                                 LastName=@LastName, 
                                 Phone=@Phone, 

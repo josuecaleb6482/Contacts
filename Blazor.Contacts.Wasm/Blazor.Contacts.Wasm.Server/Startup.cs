@@ -9,6 +9,7 @@ using System.Linq;
 using Blazor.Contacts.Wasm.Repository;
 using System.Data;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace Blazor.Contacts.Wasm.Server
 {
@@ -30,7 +31,7 @@ namespace Blazor.Contacts.Wasm.Server
             services.AddRazorPages();
 
             string dbConnection = this.Configuration.GetConnectionString("DefaultConnection");
-            services.AddSingleton<IDbConnection>((sp)=> new SqlConnection(dbConnection));
+            services.AddSingleton<IDbConnection>((sp)=> new MySqlConnection(dbConnection));
             
             services.AddScoped<IContactRepository, ContactRepository>();
             
