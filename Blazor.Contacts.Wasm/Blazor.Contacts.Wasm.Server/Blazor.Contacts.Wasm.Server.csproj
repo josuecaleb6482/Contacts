@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.6" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blazor.Contacts.Wasm.Client\Blazor.Contacts.Wasm.Client.csproj" />
+    <ProjectReference Include="..\Blazor.Contacts.Wasm.Shared\Blazor.Contacts.Wasm.Shared.csproj" />
+    <ProjectReference Include="..\Blazor.Contacts.Wasm.Repository\Blazor.Contacts.Wasm.Repository.csproj" />
+  </ItemGroup>
+
+
+</Project>
