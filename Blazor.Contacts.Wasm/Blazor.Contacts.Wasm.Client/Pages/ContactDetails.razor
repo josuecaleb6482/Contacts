@@ -1,5 +1,5 @@
 @page "/contactdetails"
-@page "/contactdetails/{id}"
+@page "/contactdetails/{Id:int}"
 
 @using Blazor.Contacts.Wasm.Shared
 
@@ -44,11 +44,17 @@ else{
 
 
 @code{
+    [Parameter]
+    public int Id { get; set; }
+
+
     public Contact contact;
 
         protected async override Task OnInitializedAsync()
         {
             contact = new Contact();
+            if(Id>0)
+                contact = await ContactService.GetDetails(Id);
         }
 
         protected async Task Save()

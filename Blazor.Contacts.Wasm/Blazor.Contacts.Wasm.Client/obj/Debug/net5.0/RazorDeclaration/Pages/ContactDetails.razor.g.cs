@@ -90,7 +90,7 @@ using Blazor.Contacts.Wasm.Shared;
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/contactdetails")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/contactdetails/{id}")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/contactdetails/{Id:int}")]
     public partial class ContactDetails : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -101,11 +101,17 @@ using Blazor.Contacts.Wasm.Shared;
 #nullable restore
 #line 46 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Pages/ContactDetails.razor"
       
+    [Parameter]
+    public int Id { get; set; }
+
+
     public Contact contact;
 
         protected async override Task OnInitializedAsync()
         {
             contact = new Contact();
+            if(Id>0)
+                contact = await ContactService.GetDetails(Id);
         }
 
         protected async Task Save()
