@@ -79,3 +79,5 @@
 /home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Server/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll
 /home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Server/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll
 /home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Server/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Server/bin/Debug/net5.0/MudBlazor.dll
+/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Server/bin/Debug/net5.0/mono_crash.21acb2c211.1.json

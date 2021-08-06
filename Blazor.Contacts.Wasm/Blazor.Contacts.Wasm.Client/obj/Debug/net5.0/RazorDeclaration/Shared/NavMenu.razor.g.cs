@@ -82,6 +82,13 @@ using Blazor.Contacts.Wasm.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/_Imports.razor"
+using MudBlazor;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -90,7 +97,7 @@ using Blazor.Contacts.Wasm.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Shared/NavMenu.razor"
+#line 10 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Shared/NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

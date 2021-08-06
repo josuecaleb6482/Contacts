@@ -82,6 +82,13 @@ using Blazor.Contacts.Wasm.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/_Imports.razor"
+using MudBlazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Pages/ListContact.razor"
 using System.Collections.Generic;
 
@@ -106,9 +113,9 @@ using System.Collections.Generic;
         contacts = await ContactService.GetAll();
     }
     
-    public void Edit()
+    public void Edit(int id)
     {
-        NavigationManager.NavigateTo("./contactdetails");
+        NavigationManager.NavigateTo($"./contactdetails/{id}");
     }
 
 

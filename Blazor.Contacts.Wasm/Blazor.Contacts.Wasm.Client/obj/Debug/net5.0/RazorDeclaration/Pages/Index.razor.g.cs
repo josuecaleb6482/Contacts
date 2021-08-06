@@ -82,6 +82,13 @@ using Blazor.Contacts.Wasm.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/_Imports.razor"
+using MudBlazor;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

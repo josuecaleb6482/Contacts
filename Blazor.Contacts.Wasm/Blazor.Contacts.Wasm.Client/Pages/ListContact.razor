@@ -27,7 +27,7 @@ else{
                     <td>@contact.FullName</td>
                     <td>@contact.Phone</td>
                     <td>@contact.Address</td>
-                    <td> <div class="btn btn-primary" >Editar</div>
+                    <td> <div class="btn btn-primary" @onclick="() => Edit(contact.Id)" >Editar</div>
                         <div class="btn btn-danger">Borrar</div></td>
                 </tr>
             }
@@ -47,9 +47,9 @@ else{
         contacts = await ContactService.GetAll();
     }
     
-    public void Edit()
+    public void Edit(int id)
     {
-        NavigationManager.NavigateTo("./contactdetails");
+        NavigationManager.NavigateTo($"./contactdetails/{id}");
     }
 
 }

@@ -1,7 +1,87 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<MudContainer Class="mt-16">
+    <MudText Typo="Typo.h3" Align="Align.Center" GutterBottom="true">Contacts Application</MudText>
+    <MudText Align="Align.Center">This page is for educative proposal.</MudText>
+    <MudGrid Class="mt-8">
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="25" Class="rounded-lg pb-4">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h5" Align="Align.Center">Portafolio</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    
+                    <MudList Class="mx-auto mt-4" Style="width:300px;">
+                        <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                            Unlimited something
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                            10 something
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                            No something
+                        </MudListItem>
+                    </MudList>
+                </MudCardContent>
+                <MudCardActions Class="d-flex justify-center">
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width:50%;">Start Now</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudCard Elevation="25" Class="rounded-lg pb-4">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h5" Align="Align.Center">Curriculum Vitae</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudList Class="mx-auto mt-4" Style="width:300px;">
+                        <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                            Unlimited something
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                            10 something
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                            No something
+                        </MudListItem>
+                    </MudList>
+                </MudCardContent>
+                <MudCardActions Class="d-flex justify-center">
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width:50%;">Start Now</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="4">
+            <MudCard Elevation="25" Class="rounded-lg pb-4">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h5" Align="Align.Center">GitHub</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudList Class="mx-auto mt-4" Style="width:300px;">
+                        <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                            Unlimited something
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                            10 something
+                        </MudListItem>
+                        <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                            No something
+                        </MudListItem>
+                    </MudList>
+                </MudCardContent>
+                <MudCardActions Class="d-flex justify-center">
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width:50%;">Start Now</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
