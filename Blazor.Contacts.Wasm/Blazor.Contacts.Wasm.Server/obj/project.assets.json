@@ -715,20 +715,6 @@
           "bin/placeholder/Blazor.Contacts.Wasm.Client.dll": {}
         }
       },
-      "Blazor.Contacts.Wasm.Repository/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Blazor.Contacts.Wasm.Shared": "1.0.0",
-          "Dapper": "2.0.90"
-        },
-        "compile": {
-          "bin/placeholder/Blazor.Contacts.Wasm.Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Blazor.Contacts.Wasm.Repository.dll": {}
-        }
-      },
       "Blazor.Contacts.Wasm.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2047,11 +2033,6 @@
       "path": "../Blazor.Contacts.Wasm.Client/Blazor.Contacts.Wasm.Client.csproj",
       "msbuildProject": "../Blazor.Contacts.Wasm.Client/Blazor.Contacts.Wasm.Client.csproj"
     },
-    "Blazor.Contacts.Wasm.Repository/1.0.0": {
-      "type": "project",
-      "path": "../Blazor.Contacts.Wasm.Repository/Blazor.Contacts.Wasm.Repository.csproj",
-      "msbuildProject": "../Blazor.Contacts.Wasm.Repository/Blazor.Contacts.Wasm.Repository.csproj"
-    },
     "Blazor.Contacts.Wasm.Shared/1.0.0": {
       "type": "project",
       "path": "../Blazor.Contacts.Wasm.Shared/Blazor.Contacts.Wasm.Shared.csproj",
@@ -2061,8 +2042,8 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Blazor.Contacts.Wasm.Client >= 1.0.0",
-      "Blazor.Contacts.Wasm.Repository >= 1.0.0",
       "Blazor.Contacts.Wasm.Shared >= 1.0.0",
+      "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Repository\\Blazor.Contacts.Wasm.Repository.csproj",
       "Dapper >= 2.0.90",
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 5.0.6",
       "MySql.Data >= 8.0.26",
@@ -2070,38 +2051,48 @@
     ]
   },
   "packageFolders": {
-    "/home/josue/.nuget/packages/": {}
+    "C:\\Users\\JFlorez\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Server/Blazor.Contacts.Wasm.Server.csproj",
+      "projectUniqueName": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Server\\Blazor.Contacts.Wasm.Server.csproj",
       "projectName": "Blazor.Contacts.Wasm.Server",
-      "projectPath": "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Server/Blazor.Contacts.Wasm.Server.csproj",
-      "packagesPath": "/home/josue/.nuget/packages/",
-      "outputPath": "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Server/obj/",
+      "projectPath": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Server\\Blazor.Contacts.Wasm.Server.csproj",
+      "packagesPath": "C:\\Users\\JFlorez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Server\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/home/josue/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\JFlorez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Blazor.Contacts.Wasm.Client.csproj": {
-              "projectPath": "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Blazor.Contacts.Wasm.Client.csproj"
+            "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Client\\Blazor.Contacts.Wasm.Client.csproj": {
+              "projectPath": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Client\\Blazor.Contacts.Wasm.Client.csproj"
             },
-            "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Repository/Blazor.Contacts.Wasm.Repository.csproj": {
-              "projectPath": "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Repository/Blazor.Contacts.Wasm.Repository.csproj"
+            "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Repository\\Blazor.Contacts.Wasm.Repository.csproj": {
+              "projectPath": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Repository\\Blazor.Contacts.Wasm.Repository.csproj"
             },
-            "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Shared/Blazor.Contacts.Wasm.Shared.csproj": {
-              "projectPath": "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Shared/Blazor.Contacts.Wasm.Shared.csproj"
+            "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Shared\\Blazor.Contacts.Wasm.Shared.csproj": {
+              "projectPath": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Shared\\Blazor.Contacts.Wasm.Shared.csproj"
             }
           }
         }
@@ -2151,8 +2142,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Repository\\Blazor.Contacts.Wasm.Repository.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Repository\\Blazor.Contacts.Wasm.Repository.csproj",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

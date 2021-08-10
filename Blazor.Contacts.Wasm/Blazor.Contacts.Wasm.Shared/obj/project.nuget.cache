@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bYMzPjyaURfob7yCFOob73K2KkT6UsOSJqNqX5Pao1HEGmfPkfSKIs2VojZ12XjynLUGQoZjS1KuXRzhQ0f1Bg==",
+  "dgSpecHash": "/ulpEtMVQu05zNhUyME8IbpXig8mMpZIKYPzvoPvQJNgq0NpiFMUrYmWzSRgMtB2F7nFg4FoLSiorWnfM+DuXQ==",
   "success": true,
-  "projectFilePath": "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Shared/Blazor.Contacts.Wasm.Shared.csproj",
+  "projectFilePath": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Shared\\Blazor.Contacts.Wasm.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
