@@ -120,7 +120,7 @@ using System.ComponentModel.DataAnnotations;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 102 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Pages/ContactDetails.razor"
+#line 73 "/home/josue/Documentos/proyectos/Contactos/Blazor.Contacts.Wasm/Blazor.Contacts.Wasm.Client/Pages/ContactDetails.razor"
       
     [Parameter]
     public int Id { get; set; }
@@ -169,6 +169,10 @@ using System.ComponentModel.DataAnnotations;
             return "Passwords don't match";
         return null;
     }
+
+    ///TODO: Agregar Elevation
+    ///TODO: Agregar Eliminar/Deshabilitar
+    ///TODO: Centrar el texto
 
 #line default
 #line hidden
