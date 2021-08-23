@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pLWTaak1uUHemZZsGdxqtgWpXZ2a+ToiJzSov3mDtLlpJgOcvLlhe4mMDGLF7PB44PI43w840qzhFsIUkWXTiw==",
+  "dgSpecHash": "1xRKXznfJLXgmgcVKYYXbsmaQgxCt/4vDD0+RSuRcbfOu6Xzm0MbQwW5Jrsrx3xVDyazAm+T/N6aao9VHr4kow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Client\\Blazor.Contacts.Wasm.Client.csproj",
+  "projectFilePath": "C:\\Users\\JFlorez\\source\\repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Client\\Blazor.Contacts.Wasm.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JFlorez\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.7\\microsoft.aspnetcore.authorization.5.0.7.nupkg.sha512",
     "C:\\Users\\JFlorez\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.7\\microsoft.aspnetcore.components.5.0.7.nupkg.sha512",

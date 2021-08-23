@@ -1,0 +1,80 @@
+﻿@using System.Text.RegularExpressions
+@using System.ComponentModel.DataAnnotations
+
+@inject IContactService ContactService
+
+
+@if (contact == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="d-flex justify-content-center mt-4">
+        <div style="max-width: 800px; min-width: 400px">
+            <MudCard Elevation="4">
+                <MudCardContent>
+                    <MudForm @ref="form" @bind-IsValid="@success" @bind-Errors="@errors">
+                        <MudTextField T="string" Label="FirstName" Required="true" RequiredError="First Name is required!" @bind-Value="@contact.FirstName" />
+                        <MudTextField T="string" Label="LastName" Required="true" RequiredError="Last Name is required!" @bind-Value="@contact.LastName" />
+                        <MudTextField T="string" Label="Address" Required="false" @bind-Value="@contact.Address" />
+                        <MudTextField T="string" Label="Phone" Required="false" @bind-Value="@contact.Phone" />
+                    </MudForm>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Primary"
+                               Disabled="@(!success)"
+                               Class="ml-auto"
+                               OnClick="@(()=>Save())">Save</MudButton>
+                    <MudButton Color="Color.Default" OnClick="Cancel">Cancel</MudButton>
+                </MudCardActions>
+            </MudCard>
+
+
+
+            <MudExpansionPanels>
+                <MudExpansionPanel Text="@($"Show Errors ({errors.Length})")">
+                    @foreach (var error in errors)
+                    {
+                        <MudText Color="@Color.Error">@error</MudText>
+                    }
+                </MudExpansionPanel>
+            </MudExpansionPanels>
+        </div>
+    </div>
+
+
+}
+
+
+@code{
+
+    [Parameter]
+    public int Id { get; set; }
+
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+
+    public Contact contact;
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (Id > 0)
+            contact = await ContactService.GetDetails(Id);
+        else
+            contact = new Contact();
+    }
+
+    protected async Task Save()
+    {
+        await ContactService.SaveContact(contact);
+        MudDialog.Close(DialogResult.Ok(contact.Id));
+    }
+
+    void Cancel() => MudDialog.Cancel();
+
+    bool success;
+    string[] errors = { };
+    MudTextField<string> pwField1;
+    MudForm form;
+}
