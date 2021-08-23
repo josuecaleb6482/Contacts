@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dW+ezxsFni+RS9Og8zlMQIaLYeg7bwhnOhMLC2PkU7jZ+x0nrVrovcruhMXtk7fbzZp3RzWrf300/HgAHKjRhw==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Server\\Blazor.Contacts.Wasm.Server.csproj",
+  "dgSpecHash": "gwloXpGRB5u3qvfBkaM87jfdxG1O/LQMiPxpHoP3Hp2oTRohZLqTPHJgHnQY7O2jMNLosfDCsDTpg8hK7oVpCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JFlorez\\source\\repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Server\\Blazor.Contacts.Wasm.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JFlorez\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\JFlorez\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
@@ -58,15 +58,5 @@
     "C:\\Users\\JFlorez\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
     "C:\\Users\\JFlorez\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Repository\\Blazor.Contacts.Wasm.Repository.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "C:\\Users\\JFlorez\\Source\\Repos\\Contacts\\Blazor.Contacts.Wasm\\Blazor.Contacts.Wasm.Repository\\Blazor.Contacts.Wasm.Repository.csproj",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

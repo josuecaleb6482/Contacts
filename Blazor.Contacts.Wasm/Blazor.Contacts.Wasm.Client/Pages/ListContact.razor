@@ -4,52 +4,120 @@
 
 @inject IContactService ContactService
 @inject NavigationManager NavigationManager
+@inject IDialogService DialogServices
+@inject ISnackbar Snackbar
 
-@if(contacts == null)
+@if (contacts == null)
 {
     <p>Loading...</p>
 }
-else{
+else
+{
 
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Address</th>
-                <td></td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var contact in contacts)
-            {
-                <tr>
-                    <td>@contact.FullName</td>
-                    <td>@contact.Phone</td>
-                    <td>@contact.Address</td>
-                    <td> <div class="btn btn-primary" @onclick="() => Edit(contact.Id)" >Editar</div>
-                        <div class="btn btn-danger">Borrar</div></td>
-                </tr>
-            }
-        </tbody>
-        
-    </table>
-    
+<MudTable Items="@contacts" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info">
+    <HeaderContent>
+        <MudTh>Full Name</MudTh>
+        <MudTh>Phone</MudTh>
+        <MudTh>Address</MudTh>
+        <MudTh></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Full Name">@context.FullName</MudTd>
+        <MudTd DataLabel="Phone">@context.Phone</MudTd>
+        <MudTd DataLabel="Address">@context.Address</MudTd>
+        <MudTd DataLabel="">
+            <MudButton Color="@Color.Primary" @onclick="() => Edit(context.Id)">Editar</MudButton>
+            <MudButton Color="@Color.Error" @onclick="() => Delete(context.Id)">Borrar</MudButton>
+        </MudTd>
+    </RowTemplate>
+</MudTable>
+<MudCardActions>
+    <MudButton Class="justify-content-md-center"
+               OnClick="CreateNew"
+               Variant="Variant.Filled"
+               Color="Color.Primary">
+        Create New Contact
+    </MudButton>
+</MudCardActions>
 }
 
 
 
-@code{
-    public IEnumerable<Contact> contacts;
+@*@code{
 
-    protected async override Task OnInitializedAsync()
-    {
-        contacts = await ContactService.GetAll();
-    }
-    
-    public void Edit(int id)
-    {
-        NavigationManager.NavigateTo($"./contactdetails/{id}");
-    }
 
-}
+    //    [Inject] private IDialogService DialogService { get; set; }
+
+    //    public IEnumerable<Contact> contacts;
+    //    public string Message = "";
+    //    public Severity severity = Severity.Normal;
+    //    public bool _loading = true;
+
+    //    protected async override Task OnInitializedAsync()
+    //    {
+    //        contacts = await ContactService.GetAll();
+    //        _loading = false;
+    //    }
+
+    //    public async void Edit(int id)
+    //    {
+    //        var parameters = new DialogParameters();
+    //        parameters.Add("id", id);
+
+    //        var dialog = DialogServices.Show<DialogForm>("Edit Contact", parameters);
+    //        var result = await dialog.Result;
+    //        if (!result.Cancelled)
+    //        {
+
+    //            contacts = await ContactService.GetAll();
+    //            StateHasChanged();
+    //            Snackbar.Add("Edit Success", Severity.Success);
+    //        }
+    //    }
+
+    //    public async void Delete(int id)
+    //    {
+    //        bool? result = await DialogService.ShowMessageBox(
+    //            "Delete Contact",
+    //            "Are you sure to want delete?",
+    //            yesText: "Delete?",
+    //            cancelText: "Cancel"
+    //            );
+    //        if (result == null)
+    //        {
+    //            Message = "Cancelado";
+    //            severity = Severity.Info;
+    //        }
+    //        else
+    //        {
+    //            try
+    //            {
+    //                _loading = true;
+    //                await ContactService.DeleteContact(id);
+    //                contacts = await ContactService.GetAll();
+    //                Snackbar.Add("Delete Success", Severity.Success);
+    //            }
+    //            catch (Exception ex)
+    //            {
+    //                Message = "Error al borrar";
+    //                severity = Severity.Error;
+    //            }
+    //        }
+    //        _loading = false;
+    //        StateHasChanged();
+    //    }
+
+    //    private async void CreateNew()
+    //    {
+    //        var dialog = DialogServices.Show<DialogForm>("Create Contact");
+    //        var result = await dialog.Result;
+
+    //        if (!result.Cancelled)
+    //        {
+    //            contacts = await ContactService.GetAll();
+    //            StateHasChanged();
+    //            Snackbar.Add("Create Success", Severity.Success);
+    //        }
+
+    //}
+}*@

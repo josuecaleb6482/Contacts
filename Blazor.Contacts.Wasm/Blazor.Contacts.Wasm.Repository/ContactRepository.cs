@@ -30,7 +30,7 @@ namespace Blazor.Contacts.Wasm.Repository
                                ,LastName
                                ,Phone
                                ,Address
-                            FROM Contacts";
+                            FROM Contacts;";
 
             return await _dbConnection.QueryAsync<Contact>(sql, new {});
         }
@@ -43,7 +43,7 @@ namespace Blazor.Contacts.Wasm.Repository
                                ,Phone
                                ,Address
                             FROM Contacts
-                            WHERE Id = @Id";
+                            WHERE Id = @Id;";
 
             return await _dbConnection.QueryFirstOrDefaultAsync<Contact>(
                                         sql, new {
@@ -78,17 +78,21 @@ namespace Blazor.Contacts.Wasm.Repository
         {
             try
             {
-                var sql = @"UPDATE Contacts 
-                                SET(FirstName=@FirstName, 
-                                LastName=@LastName, 
-                                Phone=@Phone, 
-                                Address=@Address)";
+                var sql = @"
+                                UPDATE Contacts 
+                                SET FirstName = @FirstName, 
+                                    LastName = @LastName, 
+                                    Phone = @Phone, 
+                                    Address = @Address
+                                WHERE Id = @Id;
+                            ";
 
                 var result = await _dbConnection.ExecuteAsync(sql, new {
                     contact.FirstName,
                     contact.LastName,
                     contact.Phone,
-                    contact.Address
+                    contact.Address,
+                    contact.Id
                 });
 
                 return result > 0;
