@@ -25,6 +25,17 @@ $ dotnet tool update --global dotnet-ef
 $ dotnet add package Microsoft.EntityFrameworkCore.Design
 $ dotnet add package MySql.EntityFrameworkCore
 ```
+Query
+```
+CREATE TABLE `Contacts` (  
+`Id` int (11) AUTO_INCREMENT,  
+`FirstName` nvarchar (50) NOT NULL,  
+`LastName` nvarchar (50) NOT NULL,
+`Phone` nvarchar (50) DEFAULT NULL,
+`Address` nvarchar (250) DEFAULT NULL,
+PRIMARY KEY (`Id`)
+);
+```
 
 SDK Ubuntu
 ```
